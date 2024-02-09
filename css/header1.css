@@ -1,0 +1,220 @@
+﻿* {box-sizing: border-box;}
+
+#bodyhead1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+#hed1 .topnav {
+  overflow: hidden;
+  background-color: black;
+  display:-webkit-flex;
+  -webkit-align-items:center; /* Fix typo in the property name */
+  -webkit-justify-content:space-evenly;
+  
+}
+
+#hed1 .topnav .a1 {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight:700;
+}
+#hed1 .topnav .search {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight:700;
+}
+#hed1 .topnav .user{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight:700;
+}
+
+#hed1 .topnav .a1:hover {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  color: black;
+}
+
+#hed1 .topnav .a1.active {
+  background-color: #2196F3;
+  color: white;
+}
+#hed1 .secnav .user-container{
+  height: 120px;
+  background-color: black;
+  padding-top: 10px;
+  overflow: hidden;
+  color: #000;
+  font-weight: 400; 
+  text-align: center; /* Center the text */
+}
+
+/* Add styles for the logout button */
+#hed1 .secnav .user-container p {
+  color: white;
+   margin-bottom:10px;
+}
+ 
+ #hed1 .secnav .user-container .button1 {
+      background-color: white;
+      color: black;
+      padding: 5px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration:none;
+}
+
+
+#hed1 .secnav .user-container .button:hover {
+  background-color: #555555;
+  color:white;
+
+}
+
+#hed1 .thenav .search-container {
+	height:55px;
+  background-color:black;
+  padding: 6px 40px;
+  overflow:hidden;  
+}
+
+#hed1 .thenav input[type=text] {
+  padding: 6px ;
+  width:50%;
+  font-size: 17px;
+  border: none;
+  border: 2px solid #ebebeb;
+  border-radius: 5PX;
+  margin-left:25%;
+}
+
+#hed1 .thenav .search-container button {
+  background: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  border: 2px solid #6faaff;
+  border-radius: 1.25rem;
+}
+
+
+    #hed1 .secnav .search-container {
+      height: 55px;
+      background-color: black;
+      padding: 6px 40px;
+      overflow: hidden;
+    }
+
+    #hed1 .secnav input[type=text] {
+      padding: 6px;
+      width: 50%;
+      font-size: 17px;
+      border: none;
+      border: 2px solid gray;
+      border-radius: 5px;
+      margin-left: 25%;
+    }
+
+    #hed1 .secnav .search-container .button {
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      border: none;
+      border: 2px solid #ebebeb;
+      border-radius: 5px;
+    }
+
+    #hed1 .secnav .search-container .button:hover {
+      background: #ccc;
+    }
+
+footer{
+	background-color:#111;
+    margin-top:80px;
+}
+#hed1 .footerContainer{
+	width:100%;
+	padding:70px 30px 20px;
+}
+#hed1 .socialIcons{
+	display:-webkit-flex;
+	-webkit-justify-content:center;
+}
+#hed1 .socialIcons a{
+	text-decoration:none;
+	padding:10px;
+	background-color:white;
+	margin:10px;
+	border-radius:50%;	
+}
+#hed1 .socialIcons a{
+	font-size:2em;
+	color:black;
+	opacity:0.9;
+}
+#hed1 .socialIcons a:hover{
+	background-color:#111;
+	transition:0.5s;
+}
+#hed1 .socialIcons a:hover i{
+	color:white;
+	transition:0.5s;
+}
+#hed1 .footernav{
+	margin:30px 0;
+}
+#hed1 .footernav ul{
+	display:-webkit-flex;
+	-webkit-justify-content:center;
+}
+#hed1 .footernav ul li a{
+	color:white;
+	margin:20px;
+	text-decoration:none;
+	font-size:1.3em;
+	opacity:0.7;
+	transition:0.5s;
+}
+#hed1 .footernav ul li a:hover{
+opacity:1;
+}
+#hed1 .footerBooton{
+	background-color:#000;
+	padding:20px;
+	text-align:center;
+}
+#hed1 .footerBooton p{
+	color:white;
+}
+#hed1 .designer{
+	opacity:0.7;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-weight:400;
+	margin:0px 5px;
+}

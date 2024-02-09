@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user_index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/header1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bodyhead1">
+    
+  <div id="hed1">
+  <div class="topnav">
+    <a href="index.aspx"><img src="../images/logo.png" height="120" width="120" style="margin-left:170px; margin-top:10px"/></a>
+    <a href="index.aspx" class="a1">HOME</a>
+    <a href="menu.aspx" class="a1">MENU😋</a>
+    <a href="order_disp.aspx" class="a1">YOUR ORDER</a>
+    <a href="feedback.aspx" class="a1">CONTACT</a>
+      <span id="userIconContainer" class="user">
+    <i class="fa fa-user" aria-hidden="true"></i>
+  </span>
+   <span id="searchIconContainer" class="search">
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </span>
+	<span id="shoppIconContainer" class="user">
+    <a href="your_cart.aspx" class="a1"><i class="fa fa-cart-shopping" aria-hidden="true"></i></a>
+  </span>
+</div>
+<div class="secnav">
+  <div class="user-container" id="userContainer" style="display: none;">
+        <p>Name:<asp:Label ID="name" runat="server" Text="Label"></asp:Label></p>
+        <p>Email:<asp:Label ID="email" runat="server" Text="Label"></asp:Label></p>
+      <a href="../admin/logout.aspx" class="button1">Logout</a>
+  </div>
+<div class="thenav">
+  <div class="search-container" id="searchContainer" style="display: none;">
+      <input type="text" placeholder="Search.." name="id" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    
+  </div>
+</div> 
+    </div>
+      
+        <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer>
+		<div class="footerContainer">
+			<div class="socialIcons">
+				<a><i class="fa-brands fa-facebook"></i></a>
+				<a><i class="fa-brands fa-instagram "></i></a>
+				<a><i class="fa-brands fa-twitter"></i></a>
+				<a><i class="fa-brands fa-google-plus"></i></a>
+				<a><i class="fa-brands fa-youtube"></i></a>
+			</div>
+		
+		<div class="footernav"> 
+			<ul>
+				<li><a href="index.aspx">HOME</a></li>
+				<li><a href="menu.aspx">MENU😋</a></li>
+				<li><a href="order_disp.aspx">YOUR ORDER</a></li>
+				<li><a href="feedback.aspx">CONTACK</a></li>
+				<li><a href="your_cart.aspx">YOUR CART</a></li>
+			</ul>
+		</div>
+			</div>
+		<div class="footerBooton">
+			<p>Created By Viral Gajera & Jeet Kanabar <span class="designer"> 2023 All rights reserved.</span></p>
+		</div>
+		</footer> 
+      </div>  
+</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const searchIconContainer = document.getElementById("searchIconContainer");
+        const searchContainer = document.getElementById("searchContainer");
+
+            searchIconContainer.addEventListener("click", function() {
+                if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+                    searchContainer.style.display = "block";
+                    searchIconContainer.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+                } else {
+                    searchContainer.style.display = "none";
+                    searchIconContainer.innerHTML = '<i class="fa fa-search" aria-hidden="true"></i>';
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+          const searchIconContainer = document.getElementById("userIconContainer");
+          const searchContainer = document.getElementById("userContainer");
+
+            searchIconContainer.addEventListener("click", function() {
+                if (searchContainer.style.display === "none" || userContainer.style.display === "") {
+                    searchContainer.style.display = "block";
+                    searchIconContainer.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+                } else {
+                    searchContainer.style.display = "none";
+                    searchIconContainer.innerHTML = '<i class="fa fa-user" aria-hidden="true"></i>';
+                }
+            });
+        });
+  </script>
+</html>
+
+
