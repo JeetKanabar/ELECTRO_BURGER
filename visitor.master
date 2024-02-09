@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="visitor.master.cs" Inherits="visitor" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed' />
+    <link href="css/header.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bodyhead">
+<div id="hed">
+  <div class="topnav">
+    <a href="index.aspx"><img src="images/logo.png" height="120" width="120" style="margin-left:170px; margin-top:10px"/></a>
+    <a href="index.aspx" style="margin-left:400px" class="a1">HOME</a>
+    <a href="menu.aspx" class="a1">MENU😋</a>
+    <a href="login.aspx" class="a1">LOGIN</a>
+   </div>
+    </div>
+      <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer>
+		<div class="footerContainer">
+			<div class="socialIcons">
+				<a><i class="fa-brands fa-facebook"></i></a>
+				<a><i class="fa-brands fa-instagram "></i></a>
+				<a><i class="fa-brands fa-twitter"></i></a>
+				<a><i class="fa-brands fa-google-plus"></i></a>
+				<a><i class="fa-brands fa-youtube"></i></a>
+			</div>
+		
+		<div class="footernav"> 
+			<ul>
+				<li><a href="index.aspx">HOME</a></li>
+				<li><a href="menu.aspx">PRODUCT</a></li>
+				<li><a href="login.aspx">LOGIN</a></li>
+				<li><a href="registration.aspx">SIGN-UP</a></li>
+			</ul>
+		</div>
+			</div>
+		<div class="footerBooton">
+			<p>Created By Viral Gajera & Jeet Kanabar <span class="designer"> 2023 All rights reserved.</span></p>
+		</div>
+		</footer>
+    </body>
+</html>
+  
